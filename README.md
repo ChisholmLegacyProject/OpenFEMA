@@ -31,7 +31,7 @@ The filtered claims data is written to data.csv in the current working directory
 ## Resources
 -OpenFEMA portal: https://www.fema.gov/openfema
 
--rfema package: https://cran.r-project.org/web/packages/rfema/index.html
+-rfema package: https://docs.ropensci.org/rfema/
 
 -FEMA NFIP claims dataset: https://www.fema.gov/openfema-dataset-national-flood-insurance-program-claims
 

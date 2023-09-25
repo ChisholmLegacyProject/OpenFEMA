@@ -1,0 +1,29 @@
+#Load rFEMA 
+library(rfema)
+
+#Navigate to dataset from Opendata
+df <- fema_data_fields(data_set = "fimaNfipclaims")
+
+#explore data fields
+> data_fields <- fema_data_fields("fimanfipclaims")
+> data_fields
+
+#filter the data
+df <- open_fema(
+  data_set = "fimaNfipClaims",
+  filters = list(
+    state = "= NY",
+    yearOfLoss = ">= 2010",
+    yearOfLoss = "<= 2022"
+  )
+)
+#show data
+df
+
+
+#extract data to csv
+> write.csv(df, "data.csv")
+> filepath <- normalizePath("data.csv") 
+> filepath
+[1] "C:\\Users\\COMPUTERNAMEHERE\\Documents\\data.csv"
+> #> "C:/Users/name/data.csv"
